@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Details - FreshStore</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Order #<span id="orderIdHeading"></span> Details</h2>
+    <p><strong>Customer:</strong> <span id="customerName"></span></p>
+    <p><strong>Phone:</strong> <span id="phoneNumber"></span></p>
+    <p><strong>Date:</strong> <span id="dateTime"></span></p>
+
+    <table class="table table-bordered mt-4">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Qty</th>
+          <th>Unit</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="orderDetailsBody"></tbody>
+    </table>
+
+    <h4 class="text-end">Total: ₹<span id="grandTotal"></span></h4>
+
+    <a href="/order-details" class="btn btn-secondary mt-3">← Back to Orders</a>
+  </div>
+
+  <script src="/js/order_view.js"></script>
+</body>
+</html>
